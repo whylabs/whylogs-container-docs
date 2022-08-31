@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>QueueBufferedPersistentMapConfig</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>whylogs-container</span>
+            </a>
+    </div>
+    <div>
+1.0-SNAPSHOT    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="whylogs-container::ai.whylabs.services.whylogs.persistent/QueueBufferedPersistentMapConfig///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">whylogs-container</a><span class="delimiter">/</span><a href="../index.html">ai.whylabs.services.whylogs.persistent</a><span class="delimiter">/</span><a href="index.html">QueueBufferedPersistentMapConfig</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Queue</span><wbr></wbr><span>Buffered</span><wbr></wbr><span>Persistent</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Config</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">QueueBufferedPersistentMapConfig</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>queue<span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.queue/-persistent-queue/index.html">PersistentQueue</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.map/-persistent-map/index.html">PersistentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>groupByBlock<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>defaultValue<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>mergeBlock<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>delay<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="244776740%2FConstructors%2F769193423" anchor-label="QueueBufferedPersistentMapConfig" id="244776740%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-queue-buffered-persistent-map-config.html"><span>Queue</span><wbr></wbr><span>Buffered</span><wbr></wbr><span>Persistent</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="244776740%2FConstructors%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token operator">&gt; </span><a href="-queue-buffered-persistent-map-config.html"><span class="token function">QueueBufferedPersistentMapConfig</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;queue<span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.queue/-persistent-queue/index.html">PersistentQueue</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;map<span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.map/-persistent-map/index.html">PersistentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;groupByBlock<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;defaultValue<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;mergeBlock<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;delay<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1799013852%2FProperties%2F769193423" anchor-label="buffer" id="1799013852%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="buffer.html"><span><span>buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1799013852%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="1799013852%2FProperties%2F769193423" anchor-label="buffer" id="1799013852%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="buffer.html">buffer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1799013852%2FProperties%2F769193423" anchor-label="buffer" id="1799013852%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">Whether or not to enable buffering. When this is true, the map will first buffer each of the <a href="index.html">BufferedItems</a> in a queue and asynchronously work through that. When this is false, the items are reduced into the <a href="index.html">MapValueType</a> as they come in, one by one.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-829585108%2FProperties%2F769193423" anchor-label="defaultValue" id="-829585108%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="default-value.html"><span>default</span><wbr></wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-829585108%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-829585108%2FProperties%2F769193423" anchor-label="defaultValue" id="-829585108%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="default-value.html">defaultValue</a><span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-829585108%2FProperties%2F769193423" anchor-label="defaultValue" id="-829585108%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">The default value used in reduces while merging all of the <a href="index.html">BufferedItems</a> into an existing (or non existing) <a href="index.html">MapValueType</a> for a given key.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="682384731%2FProperties%2F769193423" anchor-label="delay" id="682384731%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="delay.html"><span><span>delay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="682384731%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="682384731%2FProperties%2F769193423" anchor-label="delay" id="682384731%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="delay.html">delay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="682384731%2FProperties%2F769193423" anchor-label="delay" id="682384731%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">The amount of time to wait before processing buffered items into the map. This should basically be changed while tuning to achieve some performance target. The default tries to ensure that you don't rapidly process everything in the queue while things are still coming in, leading to lots of little processing requests when it could have all been done in a single go.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2131294149%2FProperties%2F769193423" anchor-label="groupByBlock" id="2131294149%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="group-by-block.html"><span>group</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2131294149%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="2131294149%2FProperties%2F769193423" anchor-label="groupByBlock" id="2131294149%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="group-by-block.html">groupByBlock</a><span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2131294149%2FProperties%2F769193423" anchor-label="groupByBlock" id="2131294149%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">Logic for grouping buffered items into groups, keyed off of the <a href="index.html">MapKeyType</a>. Everything that is buffered will eventually make its way into the map. In order to know what key to use in the map, everything in the buffer is grouped according to this function.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1717910558%2FProperties%2F769193423" anchor-label="map" id="-1717910558%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="map.html"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1717910558%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-1717910558%2FProperties%2F769193423" anchor-label="map" id="-1717910558%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="map.html">map</a><span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.map/-persistent-map/index.html">PersistentMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">MapKeyType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1839903481%2FProperties%2F769193423" anchor-label="mergeBlock" id="-1839903481%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="merge-block.html"><span>merge</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1839903481%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-1839903481%2FProperties%2F769193423" anchor-label="mergeBlock" id="-1839903481%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="merge-block.html">mergeBlock</a><span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html">MapValueType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1839903481%2FProperties%2F769193423" anchor-label="mergeBlock" id="-1839903481%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">Logic for determining how to transform an item in the buffer into an item that the map stores, and how to reconcile that converted value with the current value in the map if there is one.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2045576819%2FProperties%2F769193423" anchor-label="queue" id="-2045576819%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="queue.html"><span><span>queue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045576819%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-2045576819%2FProperties%2F769193423" anchor-label="queue" id="-2045576819%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="queue.html">queue</a><span class="token operator">: </span><a href="../../ai.whylabs.services.whylogs.persistent.queue/-persistent-queue/index.html">PersistentQueue</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">BufferedItems</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
